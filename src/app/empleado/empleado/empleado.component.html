@@ -4,7 +4,16 @@
 <p>Apellido {{apellido}}</p>
 <!--<p>Edad {{getedad()}}</p>-->
 <p>Edad {{edad<18?"Mayor de edad "+ edad:"Menor de edad "+edad}}</p>
-<p>Nombre empresa {{empresa}}</p>
+<p>Nombre empresa {{empresa.value}}</p>
 <div>
     <img src="" alt="imagen de prueba">
 </div>
+introduce empresa <input type="text" #empresa (keyup)="0"[disabled]="habilitacionCuadro">
+<br>
+<br>
+<input type="button" value="oprimir" > <!--(click)="llamaEmpresa(empresa.value)"-->
+<br><br>
+registro <input type="checkbox" id="registro" [checked]="usuRegistrado">
+<!---->
+{{getRegistroUsuario()}}
+

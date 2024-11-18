@@ -17,5 +17,18 @@ export class EmpleadoComponent {
   getedad(){
     return this.edad;
   }
-*/
+
+
+llamaEmpresa(value:string){
+
+}*/
+
+habilitacionCuadro= true;
+usuRegistrado=false;
+
+getRegistroUsuario(){
+
+  this.usuRegistrado=true;
+}
+
 }
